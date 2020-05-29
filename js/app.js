@@ -37,9 +37,9 @@ let prevUrl = null;
 let nextUrl = null;
 
 //Functions
-
+//Capitalizes the first letter of each name and type.
 const capitalize = (str) => str[0].toUpperCase() + str.substr(1);
-
+//removes previous pokemon from the screen
 const resetScreen = () => {
 	mainScreen.classList.remove('hide');
 	for (const type of TYPES) {
@@ -92,7 +92,15 @@ const fetchPokeData = (id) => {
 		pokeId.textContent = '#' + data['id'].toString().padStart(3, '0');
 		pokeWeight.textContent = data['weight'];
 		pokeHeight.textContent = data['height'];
+		//if front or back default is null, the empty string takes care that
 		pokeFrontImage.src = data['sprites']['front_default'] || '';
 		pokeBackImage.src = data['sprites']['back_default'] || '';
 	});
+};
+
+//This handles left button clicks
+const handleLeftButtonClick = () => {
+	if (prevUrl) {
+		fetchPokeList(prevUrl);
+	}
 };
