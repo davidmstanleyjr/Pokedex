@@ -104,3 +104,10 @@ const handleLeftButtonClick = () => {
 		fetchPokeList(prevUrl);
 	}
 };
+
+//This handles right button clicks
+const handleRightButtonClick = () => {
+	if (nextUrl) {
+		fetchPokeList(nextUrl);
+	}
+};
