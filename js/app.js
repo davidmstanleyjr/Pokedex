@@ -122,3 +122,10 @@ const handleListItemClick = (e) => {
 	const id = listItem.textContent.split('.')[0];
 	fetchPokeData(id);
 };
+
+//Event listeners for the button clicks
+leftButton.addEventListener('click', handleLeftButtonClick);
+rightButton.addEventListener('click', handleRightButtonClick);
+for (const pokeListItem of pokeListItems) {
+	pokeListItem.addEventListener('click', handleListItemClick);
+}
