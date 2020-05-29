@@ -8,7 +8,9 @@ body {
 	display: flex;
 	font-family: sans-serif;
 	justify-content: center;
-	background-color: #43b0f2;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .pokedex {
