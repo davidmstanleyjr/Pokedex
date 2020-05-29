@@ -111,3 +111,14 @@ const handleRightButtonClick = () => {
 		fetchPokeList(nextUrl);
 	}
 };
+
+//This handles the clicking of listItems
+const handleListItemClick = (e) => {
+	if (!e.target) return;
+
+	const listItem = e.target;
+	if (!listItem.textContent) return;
+
+	const id = listItem.textContent.split('.')[0];
+	fetchPokeData(id);
+};
