@@ -129,3 +129,6 @@ rightButton.addEventListener('click', handleRightButtonClick);
 for (const pokeListItem of pokeListItems) {
 	pokeListItem.addEventListener('click', handleListItemClick);
 }
+
+//This initializes the app
+fetchPokeList('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20');
