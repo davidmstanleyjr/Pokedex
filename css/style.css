@@ -442,5 +442,6 @@ body {
 		width: 650px;
 		height: 700px;
 		padding-left: 80px;
+		position: static;
 	}
 }
