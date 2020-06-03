@@ -439,8 +439,8 @@ body {
 
 @media screen and (max-width: 640px) {
 	.pokedex {
-		width: 650px;
-		height: 500px;
+		width: 660px;
+		height: 600px;
 		margin-right: 150px;
 	}
 }
