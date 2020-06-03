@@ -22,9 +22,9 @@ I also had an issue with mobile responsiveness. The handheld console would becom
 
 # Screenshots
 
-![Screenshot 1](images/snip1.png )
-![Screenshot 1](images/snip2.png )
-![Screenshot 1](images/snip3.png )
+![Screenshot 1](images/snip1.PNG)
+![Screenshot 1](images/snip2.PNG)
+![Screenshot 1](images/snip3.PNG)
 
 # Live Page
 
