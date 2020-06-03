@@ -436,3 +436,11 @@ body {
 .fairy {
 	background: #f9aeff;
 }
+
+@media screen and (max-width: 640px) {
+	.pokedex {
+		width: 650px;
+		height: 500px;
+		margin-right: 150px;
+	}
+}
